@@ -1,3 +1,7 @@
+## 0.7.0
+
+* Convert project into null-safety.
+
 ## 0.6.2-beta
 
 * Added Directionality to overlay.

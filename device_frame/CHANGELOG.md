@@ -1,3 +1,7 @@
+## [0.4.0] - 2021/03/06
+
+* Convert project into null-safety
+
 ## [0.3.0] - 2020/11/11
 
 * Stable release
