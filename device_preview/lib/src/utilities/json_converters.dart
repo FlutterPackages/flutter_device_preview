@@ -7,10 +7,6 @@ class SizeJsonConverter implements JsonConverter<Size, Object> {
 
   @override
   Size fromJson(Object json) {
-    if (json == null) {
-      return null;
-    }
-
     if (json is Iterable) {
       final list = json.toList();
 
@@ -28,18 +24,17 @@ class SizeJsonConverter implements JsonConverter<Size, Object> {
 
   @override
   Object toJson(Size object) {
-    if (object == null) return null;
     return [object.width, object.height];
   }
 }
 
-class EdgeInsetsJsonConverter implements JsonConverter<EdgeInsets, Object> {
+class EdgeInsetsJsonConverter implements JsonConverter<EdgeInsets, Object?> {
   const EdgeInsetsJsonConverter();
 
   @override
-  EdgeInsets fromJson(Object json) {
+  EdgeInsets fromJson(Object? json) {
     if (json == null) {
-      return null;
+      return EdgeInsets.zero;
     }
 
     if (json is Iterable) {
@@ -68,7 +63,7 @@ class EdgeInsetsJsonConverter implements JsonConverter<EdgeInsets, Object> {
   }
 
   @override
-  Object toJson(EdgeInsets object) {
+  Object? toJson(EdgeInsets? object) {
     if (object == null) return null;
     return [
       object.left,

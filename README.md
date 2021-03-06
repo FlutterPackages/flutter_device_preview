@@ -1,3 +1,15 @@
+## Important
+
+This branch can be used per direct git dependency:
+
+```yml
+  device_preview:
+    git:
+      url: https://github.com/FlutterPackages/flutter_device_preview.git
+      path: device_preview
+      ref: master
+```
+
 <p align="center">
   <img src="https://github.com/aloisdeniel/flutter_device_preview/raw/master/logo.png" alt="Device Preview for Flutter" />
 </p>
