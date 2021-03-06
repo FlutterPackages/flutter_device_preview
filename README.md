@@ -1,17 +1,13 @@
 ## Important
 
-Working fork for flutter beta channel (with null safety breaking changes). 
-
-Probably obsolete after 3. March 2021
-
 This branch can be used per direct git dependency:
 
 ```yml
   device_preview:
     git:
-      url: https://github.com/FluentChange/flutter_device_preview.git
+      url: https://github.com/FlutterPackages/flutter_device_preview.git
       path: device_preview
-      ref: nnbd_git_dependency
+      ref: master
 ```
 
 <p align="center">
